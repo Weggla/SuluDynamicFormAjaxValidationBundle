@@ -26,6 +26,7 @@ class ErrorMessageCollectionTest extends TestCase
         ];
         $errorMessages = $collection->toArray();
 
+        self::assertSame(2, $collection->count());
         self::assertSame($expectedErrorMessages, $errorMessages);
     }
 }
