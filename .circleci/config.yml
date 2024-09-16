@@ -12,8 +12,10 @@ jobs:
       - checkout
       - php/install-packages
       - run:
-          name: run tests
-          command: ./vendor/bin/phpunit
+          name: "Run tests"
+          command: phpdbg -qrr vendor/bin/phpunit --coverage-html build/coverage-report
+          environment:
+            XDEBUG_MODE: coverage
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
