@@ -13,6 +13,8 @@ jobs:
           command: |
             sudo pecl install pcov
             ./vendor/bin/phpunit --coverage-clover build/coverage-report/coverage.xml
+      - store_test_results:
+          path: build/coverage-report
 workflows:
   build-and-test:
     jobs:
