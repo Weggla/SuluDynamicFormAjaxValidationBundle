@@ -12,7 +12,6 @@ jobs:
           name: "Run tests"
           command: |
             sudo pecl install pcov
-            sudo docker-php-ext-enable pcov
             ./vendor/bin/phpunit --coverage-clover build/coverage-report/coverage.xml
 workflows:
   build-and-test:
