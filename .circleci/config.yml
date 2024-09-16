@@ -12,7 +12,7 @@ jobs:
           name: "Run tests"
           command: |
             sudo pecl install pcov
-            ./vendor/bin/phpunit --coverage-clover build/coverage-report/coverage.xml
+            ./vendor/bin/phpunit --log-junit build/coverage-report/junit.xml
       - store_test_results:
           path: build/coverage-report
 workflows:
