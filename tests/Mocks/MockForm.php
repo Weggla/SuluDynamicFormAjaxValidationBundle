@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sulu\Bundle\FormAjaxValidation\Tests\Mocks;
+namespace Sulu\Bundle\DynamicFormAjaxValidation\Tests\Mocks;
 
 use IteratorAggregate;
 use Symfony\Component\Form\Exception;

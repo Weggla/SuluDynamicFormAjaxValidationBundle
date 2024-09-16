@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Sulu\Bundle\FormAjaxValidation\Tests\Adapter\Symfony\Form;
+namespace Sulu\Bundle\DynamicFormAjaxValidation\Tests\Form\Validation;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
-use Sulu\Bundle\FormAjaxValidation\Adapter\Symfony\Form\ErrorMessageTransformer;
 use PHPUnit\Framework\TestCase;
-use Sulu\Bundle\FormAjaxValidation\Tests\Mocks\MockForm;
-use Sulu\Bundle\FormAjaxValidation\Tests\Mocks\MockFormField;
-use Sulu\Bundle\FormAjaxValidation\Validation\ErrorMessage;
-use Sulu\Bundle\FormAjaxValidation\Validation\ErrorMessageCollection;
+use Sulu\Bundle\DynamicFormAjaxValidation\Form\Validation\ErrorMessage;
+use Sulu\Bundle\DynamicFormAjaxValidation\Form\Validation\ErrorMessageCollection;
+use Sulu\Bundle\DynamicFormAjaxValidation\Form\Validation\ErrorMessageTransformer;
+use Sulu\Bundle\DynamicFormAjaxValidation\Tests\Mocks\MockForm;
+use Sulu\Bundle\DynamicFormAjaxValidation\Tests\Mocks\MockFormField;
 use Symfony\Component\Form\FormError;
 
 #[CoversClass(ErrorMessageTransformer::class)]

@@ -2,11 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Sulu\Bundle\FormAjaxValidation\Adapter\Symfony\Form;
+namespace Sulu\Bundle\DynamicFormAjaxValidation\Form\Validation;
 
-use Sulu\Bundle\FormAjaxValidation\Adapter\Symfony\Controller\ErrorMessageTransformerInterface;
-use Sulu\Bundle\FormAjaxValidation\Validation\ErrorMessage;
-use Sulu\Bundle\FormAjaxValidation\Validation\ErrorMessageCollection;
+use Sulu\Bundle\DynamicFormAjaxValidation\Controller\ErrorMessageTransformerInterface;
 use Symfony\Component\Form\FormInterface;
 
 final class ErrorMessageTransformer implements ErrorMessageTransformerInterface

@@ -1,6 +1,6 @@
 {
-  "name": "weggla/sulu-form-ajax-validation-bundle",
-  "description": "A small bundle for Sulu projects to validate forms via ajax request",
+  "name": "weggla/sulu-dynamic-form-ajax-validation-bundle",
+  "description": "A small bundle for Sulu projects to validate dynamic forms via ajax request",
   "type": "sulu-bundle",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -10,7 +10,7 @@
       "email": "weggla@posteo.de"
     }
   ],
-  "homepage": "https://github.com/Weggla/SuluFormAjaxValidationBundle",
+  "homepage": "https://github.com/Weggla/SuluDynamicFormAjaxValidationBundle",
   "keywords": [
     "sulu",
     "forms"
@@ -29,12 +29,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Sulu\\Bundle\\FormAjaxValidation\\": "src/"
+      "Sulu\\Bundle\\DynamicFormAjaxValidation\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Sulu\\Bundle\\FormAjaxValidation\\Tests\\": "tests/"
+      "Sulu\\Bundle\\DynamicFormAjaxValidation\\Tests\\": "tests/"
     }
   },
   "config": {
