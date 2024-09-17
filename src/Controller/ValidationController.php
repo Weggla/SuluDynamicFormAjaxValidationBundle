@@ -18,7 +18,7 @@ readonly class ValidationController
     ) {
     }
 
-    #[Route('/ajax/form/validate', name: 'validate_form_ajax', methods: ['POST'])]
+    #[Route('/ajax/form/validate', name: 'validate_dynamic_form_ajax', methods: ['POST'])]
     public function validateFormField(Request $request): JsonResponse
     {
         $form = $this->formBuilder->buildByRequest($request);
@@ -33,16 +33,5 @@ readonly class ValidationController
         $errorMessages = $this->errorMessageTransformer->transform($form);
 
         return new JsonResponse(['result' => $errorMessages->toArray()], 422);
-    }
-
-    private function getFieldErrors(FormInterface $field): array
-    {
-        $errors = $field->getErrors();
-        $errorMessages = [];
-        foreach ($errors as $error) {
-            $errorMessages[] = $error->getMessage();
-        }
-
-        return $errorMessages;
     }
 }
