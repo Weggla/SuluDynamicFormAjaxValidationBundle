@@ -16,7 +16,7 @@ class SuluDynamicFormAjaxValidationBundle extends AbstractBundle
     {
         parent::loadExtension($config, $container, $builder);
 
-        $loader = new YamlFileLoader($builder, new FileLocator(__DIR__.'/config'));
+        $loader = new YamlFileLoader($builder, new FileLocator(__DIR__.'/../config'));
         $loader->load('services.yaml');
     }
 
