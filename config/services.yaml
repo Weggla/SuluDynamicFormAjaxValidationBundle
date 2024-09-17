@@ -1,0 +1,3 @@
+services:
+  Sulu\Bundle\FormBundle\Event\RequestListener:
+    alias: sulu_form.request_listener
