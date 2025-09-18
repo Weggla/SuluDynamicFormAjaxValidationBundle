@@ -1,6 +1,7 @@
 services:
   Sulu\Bundle\DynamicFormAjaxValidation\Controller\ValidationController:
     class: Sulu\Bundle\DynamicFormAjaxValidation\Controller\ValidationController
+    public: true
     arguments:
       $formBuilder: '@sulu_form.builder'
       $errorMessageTransformer: '@Sulu\Bundle\DynamicFormAjaxValidation\Form\Validation\ErrorMessageTransformer'
